@@ -47,10 +47,12 @@ public class MainActivity extends SampleActivityBase {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        SwipeRefreshListFragmentFragment fragment = new SwipeRefreshListFragmentFragment();
-        transaction.replace(R.id.sample_content_fragment, fragment);
-        transaction.commit();
+        if (savedInstanceState == null) {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            SwipeRefreshListFragmentFragment fragment = new SwipeRefreshListFragmentFragment();
+            transaction.replace(R.id.sample_content_fragment, fragment);
+            transaction.commit();
+        }
     }
 
     @Override
