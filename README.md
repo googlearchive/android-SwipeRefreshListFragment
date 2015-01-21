@@ -1,10 +1,23 @@
 Android SwipeRefreshListFragment Sample
 ===================================
 
-A sample which shows how to use SwipeRefreshLayout within a ListFragment to add the
+A sample which shows how to use `SwipeRefreshLayout` to add
 'swipe-to-refresh' gesture to a ListView, enabling the ability to trigger a refresh
-from swiping down on that view. This is provided through the re-usable
-SwipeRefreshListFragment class.
+from swiping down on that view.
+
+Introduction
+------------
+
+A sample which shows how to use
+[SwipeRefreshLayout][1] within a `ListFragment` to add the 'swipe-to-refresh'
+gesture to a `ListView`. The sample provides this functionality by defining a
+re-usable `SwipeRefreshListFragment` class.
+
+The sample displays a list of cheeses. When the user initiates a downward swipe,
+that list refreshes with randomly generated items. Selecting the `Refresh`
+action from the action bar also refreshes the list.
+
+[1]: https://developer.android.com/reference/android/support/v4/widget/SwipeRefreshLayout.html
 
 Pre-requisites
 --------------
@@ -12,6 +25,11 @@ Pre-requisites
 - Android SDK v21
 - Android Build Tools v21.1.1
 - Android Support Repository
+
+Screenshots
+-------------
+
+<img src="screenshots/refresh.png" height="400" alt="Screenshot"/> 
 
 Getting Started
 ---------------

@@ -5,8 +5,15 @@
 ---
 status:       PUBLISHED
 technologies: [Android]
-categories:   [UI]
+categories:   [UI, Input]
 languages:    [Java]
 solutions:    [Mobile]
 github:       android-SwipeRefreshListFragment
+level:        INTERMEDIATE
+icon:         screenshots/icon-web.png
+apiRefs:
+    - android:android.support.v4.widget.SwipeRefreshLayout
+    - android:android.widget.ArrayAdapter
+    - android:android.widget.ListAdapter
+    - android:android.support.v4.app.ListFragment
 license: apache2
